@@ -58,7 +58,8 @@ function SingleTripPage() {
                         </ul>
                     </div>
 
-                </section>) :
+                </section>
+                ) :
 
                 (
                     <>
