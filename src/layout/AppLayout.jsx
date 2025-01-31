@@ -8,7 +8,9 @@ function AppLayout() {
     return (
         <>
             <AppHeader />
-            <Outlet />
+            <main className="container">
+                <Outlet />
+            </main>
             <AppFooter />
         </>
     );
