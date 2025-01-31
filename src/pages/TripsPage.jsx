@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import data from "../data/viaggi"
+import data from "../data/viaggi";
 
 
 function TripsPage() {
 
     return (
         <div className="container">
-            <ul className="d-flex flex-wrap gap-3 p-0 list-unstyled">
+            <ul className="d-flex flex-wrap gap-3 p-0 list-unstyled mt-5">
                 {data.map(curViaggio => (
 
                     <li key={curViaggio.id} className="card" style={{ width: "18rem" }}>
