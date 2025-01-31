@@ -5,7 +5,7 @@ function HomePage() {
     return (
         <div className={`${style.container}`}>
             <div className={`${style.row}`}>
-                <div className={`${style.login-box}`}>
+                <div className={`${style.loginbox}`}>
                     <h2>Benvenuto user! Accedi nella tua fantastica area riservata.</h2>
                     <form action="">
                         <div>

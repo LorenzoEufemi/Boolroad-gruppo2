@@ -73,7 +73,7 @@ const partecipanti = [
     },
     {
       nome: "Thomas",
-      cognome: "Burbato",
+      cognome: "Turbato",
       email: "thomas.burbato@example.com",
       telefono: "+39 392 345 6789",
       codiceFiscale: "BRBTHM95H23T012V",

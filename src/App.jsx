@@ -11,9 +11,10 @@ function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<HomePage />}/>
-          <Route path="/trips" />
-          <Route index element={<TripsPage />}/>
-          <Route path="/:id" element={<SingleTripPage />}/>
+          <Route path="/trips" >
+            <Route index element={<TripsPage />}/>
+            <Route path=":id" element={<SingleTripPage />}/>
+          </Route>
         </Route>
       </Routes>     
     </BrowserRouter>
