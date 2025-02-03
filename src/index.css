@@ -1,7 +1,7 @@
 /* LAYOUTS */
 main {
     background-color: rgba(44, 249, 92, 0.708);
-    
+
 }
 
 a {
@@ -54,6 +54,15 @@ main {
     background-color: rgb(199, 214, 214);
     height: 20rem;
 }
+
+/* TRIPS PAGE BTN X FORM E OVERLAY*/
+.c-modal-btn {
+    position: absolute;
+    right: 10%;
+    bottom: 100px;
+}
+
+
 
 /* SINGLE TRIP PAGE */
 .trip-box {
