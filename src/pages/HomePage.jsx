@@ -2,7 +2,7 @@
 function HomePage() {
 
     return (
-    <div className="container">
+    <div className="homepage">
         <div className="d-flex justify-content-center align-items-center">
             <div className="login-box d-flex flex-column align-items-center">
                 <div className="titolo text-center">

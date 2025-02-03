@@ -13,33 +13,64 @@ header .active {
 }
 
 main {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 150px);
     overflow-y: auto;
 }
 
-
 /* HOMEPAGE */
+.homepage {
+    height: calc(100vh - 150px);
+    background-image: url("https://media.posterlounge.com/img/products/550000/542387/542387_poster.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
 .login-box {
     margin-top: 10rem;
-    color: white;
-    background-color: rgb(94, 77, 114);
+    color: black;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 2rem;
+
+}
+
+/* TRIPS PAGE */
+.trips-page {
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    background-image: url("https://previews.123rf.com/images/nnnnae/nnnnae1507/nnnnae150700173/41936451-percorsi-aerei-per-viaggiare-seamless-pattern-vettore-struttura-endless-pu%C3%B2-essere-utilizzato-per.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 .titolo {
     margin-bottom: 5rem;
 }
 
-/* TRIPS PAGE */
 .search-box {
     margin-top: 2rem;
     border-radius: 20px;
-    background-color: rgba(27, 143, 54, 0.708);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0, 1);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 3rem;
 }
 
 .search-title {
     color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .search-btn {
@@ -53,6 +84,28 @@ main {
 .trips-area .card {
     background-color: rgb(199, 214, 214);
     height: 20rem;
+    position: relative;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 70%);
+    overflow: hidden;
+}
+
+.trips-area .card-body {
+    color: white;
+    z-index: 1;
+}
+
+.trips-area .card-title {
+    color: white;
+    z-index: 1;
 }
 
 /* TRIPS PAGE BTN X FORM E OVERLAY*/
@@ -66,7 +119,7 @@ main {
 
 /* SINGLE TRIP PAGE */
 .trip-box {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .partecipante {
@@ -89,4 +142,10 @@ main {
 
 .border-radius {
     border-radius: 50px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1E90FF;
+    color: white;
 }
