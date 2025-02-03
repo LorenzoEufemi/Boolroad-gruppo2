@@ -7,7 +7,7 @@ function TripsPage() {
 
     return (
         <div className="container">
-            <div className="search-box d-flex flex-column justify-content-center align-items-center pt-5">
+            <div className="search-box d-flex flex-column justify-content-center align-items-center mt-3">
                 <h3 className="search-title mb-2">Il cerca-viaggiatore!!!!</h3>
                 <SearchBar />
             </div>
@@ -22,7 +22,7 @@ function TripsPage() {
                                         <h6 className="card-subtitle mb-2 text-muted">{curViaggio.destinazione}</h6>
                                     </div>
                                     <div className="details-button">
-                                        {
+                                        
                                             <Link
                                                 to={`/trips/${curViaggio.id}`}
                                                 type="button"
@@ -30,7 +30,7 @@ function TripsPage() {
                                             >
                                                 Dettagli
                                             </Link>
-                                        }
+                                        
                                     </div>
                                 </div>
                             </div>
