@@ -1,7 +1,9 @@
 /* LAYOUTS */
 main {
-    background-color: rgba(44, 249, 92, 0.708); 
-    background-image: url("../images/travel-clipart-transparent-16.png");
+    /* background-color: rgba(44, 249, 92, 0.708);  */
+    background: linear-gradient(145deg, #121212, #151515);
+    box-shadow:  16px 16px 50px #090909, -16px -16px 50px #1f1f1f;
+    /* background-image: url("../images/travel-clipart-transparent-16.jpg");  */
 }
 
 a {
