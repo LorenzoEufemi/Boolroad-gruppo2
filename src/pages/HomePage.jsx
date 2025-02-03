@@ -1,9 +1,8 @@
-import style from "../HomePage.module.css";
 
 function HomePage() {
 
     return (
-        <div className="container">
+    <div className="container">
         <div className="d-flex justify-content-center align-items-center">
             <div className="login-box d-flex flex-column align-items-center">
                 <div className="titolo text-center">

@@ -1,15 +1,77 @@
 /* LAYOUTS */
+main {
+    /* background-color: rgba(44, 249, 92, 0.708);  */
+    background: linear-gradient(145deg, #121212, #151515);
+    box-shadow:  16px 16px 50px #090909, -16px -16px 50px #1f1f1f;
+    /* background-image: url("../images/travel-clipart-transparent-16.jpg");  */
+}
+
+a {
+    text-decoration: none;
+}
+
+header .active {
+    color: rgb(121, 121, 121);
+}
+
+main {
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+/* HEADER */
 
 
 /* HOMEPAGE */
 .login-box {
     margin-top: 10rem;
     color: white;
-    background-color: rgb(22, 0, 48);
+    background-color: rgb(94, 77, 114);
     border-radius: 20px;
     padding: 2rem;
 }
 
 .titolo {
     margin-bottom: 5rem;
+}
+
+/* TRIPS PAGE */
+.search-btn {
+    border: 1px solid rgb(0, 104, 0);
+}
+
+.trips-area {
+    padding: 5rem 8rem;
+}
+
+.trips-area .card {
+    background-color: rgb(199, 214, 214);
+    height: 20rem;
+}
+
+/* SINGLE TRIP PAGE */
+.trip-box {
+    padding: 3rem 0;
+}
+
+.partecipante {
+    color: black;
+}
+
+.partecipante:hover {
+    cursor: pointer;
+}
+
+/* PARTECIPANT */
+.info {
+    border: 1.5px solid black; 
+    border-radius: 5px;
+}
+
+.search-form {
+    width: 80%;
+}
+
+.border-radius{
+    border-radius: 50px;
 }

@@ -1,33 +1,43 @@
 import { Link } from "react-router-dom";
 import data from "../data/viaggi";
+import SearchBar from "../components/SearchBar";
 
 
 function TripsPage() {
 
     return (
-        <div className="container">
-            <ul className="d-flex flex-wrap gap-3 p-0 list-unstyled mt-5">
-                {data.map(curViaggio => (
-
-                    <li key={curViaggio.id} className="card" style={{ width: "18rem" }}>
-                        <div className="card-body">
-                            <h5 className="card-title">{curViaggio.nomeViaggio}</h5>
-                            <h6 className="card-subtitle mb-2 text-muted">{curViaggio.destinazione}</h6>
-
-                         
-                            {
-                                <Link
-                                    to={`/trips/${curViaggio.id}`}
-                                    type="button"
-                                    className={`btn ${curViaggio.inCorso ? "btn-success" : "btn-light"}`}
-                                >
-                                    Dettagli
-                                </Link>
-                            }
-                        </div>
-                    </li>
-                ))}
-            </ul>
+        <div>
+            <div className="d-flex flex-column justify-content-center align-items-center pt-5">
+                <SearchBar />
+            </div>
+            <div className="trips-area d-flex">
+                <ul className="d-flex flex-wrap gap-4 list-unstyled justify-content-evenly">
+                    {data.map(curViaggio => (
+                        
+                        <li key={curViaggio.id} className="col-12 col-sm-12 d-flex flex-column justify-content-end">
+                            <div className="card d-flex flex-column justify-content-end" style={{ backgroundImage: `url(${curViaggio.immagine})` }} >
+                                <div className="card-body d-flex justify-content-between">
+                                    <div className="card-text d-flex flex-column">
+                                        <h5 className="card-title">{curViaggio.nomeViaggio}</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted">{curViaggio.destinazione}</h6>
+                                    </div>
+                                    <div className="details-button">
+                                        {
+                                            <Link
+                                                to={`/trips/${curViaggio.id}`}
+                                                type="button"
+                                                className={`btn ${curViaggio.inCorso ? "btn-success" : "btn-light disabled"}`}
+                                            >
+                                                Dettagli
+                                            </Link>
+                                        }
+                                    </div>
+                                </div>
+                            </div>                        
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
