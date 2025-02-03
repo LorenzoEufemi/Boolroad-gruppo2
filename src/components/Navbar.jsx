@@ -21,8 +21,7 @@ function Navbar() {
                     className="text-white ms-4"
                 >Viaggi
                 </NavLink>
-            </div>
-           
+            </div>           
         </nav>
 
     );

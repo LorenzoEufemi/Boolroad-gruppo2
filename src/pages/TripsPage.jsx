@@ -6,8 +6,9 @@ import SearchBar from "../components/SearchBar";
 function TripsPage() {
 
     return (
-        <div>
-            <div className="d-flex flex-column justify-content-center align-items-center pt-5">
+        <div className="container">
+            <div className="search-box d-flex flex-column justify-content-center align-items-center pt-5">
+                <h3 className="search-title mb-2">Il cerca-viaggiatore!!!!</h3>
                 <SearchBar />
             </div>
             <div className="trips-area d-flex">

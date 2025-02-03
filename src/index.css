@@ -1,7 +1,7 @@
 /* LAYOUTS */
 main {
     background-color: rgba(44, 249, 92, 0.708);
-    background-image: url("./images/travel-clipart-transparent-16.png");
+    
 }
 
 a {
@@ -34,6 +34,16 @@ main {
 }
 
 /* TRIPS PAGE */
+.search-box {
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: rgba(27, 143, 54, 0.708);
+}
+
+.search-title {
+    color: white;
+}
+
 .search-btn {
     border: 1px solid rgb(0, 104, 0);
 }
