@@ -1,4 +1,6 @@
 /* LAYOUTS */
+main {}
+
 a {
     text-decoration: none;
 }
@@ -15,27 +17,28 @@ main {
 /* HOMEPAGE */
 .homepage {
     height: calc(100vh - 150px);
-    background-image: url("https://media.posterlounge.com/img/products/550000/542387/542387_poster.jpg");
+    background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/170606110126-tokyo-skyline.jpg?q=w_3000,h_1921,x_0,y_0,c_fill");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    width: 100%;
 }
 
 .login-box {
     margin-top: 10rem;
-    color: black;
-    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     padding: 2rem;
-    
+
 }
 
 /* TRIPS PAGE */
 .trips-page {
     height: calc(100vh - 150px);
     overflow-y: auto;
-    background-image: url("https://previews.123rf.com/images/nnnnae/nnnnae1507/nnnnae150700173/41936451-percorsi-aerei-per-viaggiare-seamless-pattern-vettore-struttura-endless-pu%C3%B2-essere-utilizzato-per.jpg");
+    background-image: url("https://media.idownloadblog.com/wp-content/uploads/2018/07/iPhone-cartoon-landscape-wallpaper-ongliong11-1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,11 +54,18 @@ main {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0,1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0, 1);
     width: 80%;
     max-width: 600px;
     margin: auto;
     margin-top: 3rem;
+}
+
+.add-trip {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0, 1);
 }
 
 .search-title {
@@ -103,7 +113,25 @@ main {
     z-index: 1;
 }
 
+/* TRIPS PAGE BTN X FORM E OVERLAY*/
+.c-modal-btn {
+    position: absolute;
+    right: 8%;
+    bottom: 150px;
+}
+
 /* SINGLE TRIP PAGE */
+.single-trip-page {
+    height: calc(100vh - 150px);
+    background-image: url("https://media.idownloadblog.com/wp-content/uploads/2018/07/iPhone-cartoon-landscape-wallpaper-ongliong11-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.back-btn {}
+
 .trip-box {
     padding: 4rem 0;
 }
@@ -131,7 +159,8 @@ main {
 }
 
 /* FOOTER */
-footer {
+.footer {
     background-color: #1E90FF;
     color: white;
+    height: 70px;
 }

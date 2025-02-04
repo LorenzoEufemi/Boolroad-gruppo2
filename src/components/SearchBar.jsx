@@ -11,22 +11,22 @@ function SearchBar() {
 
     const getViaggiatori = (event) => {
         if (event) event.preventDefault();
-        
+
         const viaggiatoreCercato = data.find(curViaggiatore => (
             curViaggiatore.nome.toLowerCase() === searchValue.toLowerCase() ||
             curViaggiatore.cognome.toLowerCase() === searchValue.toLowerCase()
         ));
-        
+
         // Filtra l'array `dataViaggi` per ottenere solo i viaggi in cui il partecipante cercato è presente
-        const viaggi = dataViaggi.filter(curViaggio => 
+        const viaggi = dataViaggi.filter(curViaggio =>
             // Controlla se almeno un partecipante nel viaggio ha il codice fiscale corrispondente
-            curViaggio.partecipanti.some(curPartecipante => 
+            curViaggio.partecipanti.some(curPartecipante =>
                 curPartecipante.codiceFiscale === viaggiatoreCercato.codiceFiscale
             )
         );
 
         console.log(viaggi);
-        
+
         setViaggiatore(viaggiatoreCercato || null);
         setViaggiDelPartecipante(viaggi);
     };
@@ -40,17 +40,18 @@ function SearchBar() {
     return (
         <>
             <form className="search-form d-flex" role="search" onSubmit={getViaggiatori}>
-                <input 
-                    className="form-control me-2" 
+                <input
+                    className="form-control me-2"
                     type="search"
                     onKeyUp={handleEnterKey}
                     value={searchValue}
+                    // cambia il valore di searchValue
                     onChange={(event) => setSearchValue(event.target.value)}
-                    placeholder="Cerca il nome di un viaggiatore" 
-                    aria-label="Search" 
+                    placeholder="Cerca il nome di un viaggiatore"
+                    aria-label="Search"
                 />
-                <button 
-                    className="search-btn btn btn-success mx-2" 
+                <button
+                    className="search-btn btn btn-success mx-2"
                     type="submit"
                 >
                     Cerca
@@ -69,11 +70,11 @@ function SearchBar() {
                 )}
                 {viaggiDelPartecipante && (
                     viaggiDelPartecipante.map(curViaggio => (
-                        <Link 
-                        key={curViaggio.id} 
-                        className="card border-0"
-                        to={`/trips/${curViaggio.id}`}> 
-                            <div className="card-body text-start p-2"> 
+                        <Link
+                            key={curViaggio.id}
+                            className="card border-0"
+                            to={`/trips/${curViaggio.id}`}>
+                            <div className="card-body text-start p-2">
                                 <h5 className="mb-0">Viaggio: {curViaggio.nomeViaggio}</h5>
                                 <p className="mb-0">Destinazione: {curViaggio.destinazione}</p>
                             </div>
