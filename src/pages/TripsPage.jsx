@@ -13,11 +13,12 @@ const initialData = {
     immagine: "",
     partecipanti: [
         {
-            nome: "Livio Lenta",
-            codiceFiscale: "LNTLVI90A01H501Z"
-        }, {
-            nome: "Mousse Leeny",
-            codiceFiscale: "LENMSS92C14D612W"
+            nome: "Ivan Zanicchi",
+            codiceFiscale: "ZNCIVN81G18N678J"
+        },
+        {
+            nome: "Gerry Scottish",
+            codiceFiscale: "SCTGRY85L12M456P"
         }],
     inCorso: false
 }
