@@ -1,37 +1,25 @@
 const partecipanti = [
   {
-    nome: "Livio",
-    cognome: "Lenta",
-    email: "livio.lenta@example.com",
+    nome: "Marco",
+    cognome: "Rossi",
+    email: "marco.rossi@example.com",
     telefono: "+39 345 678 9012",
-    codiceFiscale: "LNTLVI90A01H501Z",
+    codiceFiscale: "RSSMRC90A01H501Z",
     contattoEmergenza: {
-      nome: "Mimmo",
-      cognome: "Scanzi",
+      nome: "Gianni",
+      cognome: "Bianchi",
       numero: "+39 123 123 4567"
     }
   },
   {
-    nome: "Igor",
-    cognome: "Miti",
-    email: "igor.miti@example.com",
+    nome: "Sara",
+    cognome: "Verdi",
+    email: "sara.verdi@example.com",
     telefono: "+39 333 123 4567",
-    codiceFiscale: "MTIGRR85B12L219K",
+    codiceFiscale: "VRDSRA85B12L219K",
     contattoEmergenza: {
-      nome: "Egidio",
-      cognome: "Rubicone",
-      numero: "+39 123 123 4567"
-    }
-  },
-  {
-    nome: "Mousse",
-    cognome: "Leeny",
-    email: "mousse.leeny@example.com",
-    telefono: "+39 366 789 1234",
-    codiceFiscale: "LENMSS92C14D612W",
-    contattoEmergenza: {
-      nome: "Franco",
-      cognome: "Pollo",
+      nome: "Claudio",
+      cognome: "Neri",
       numero: "+39 123 123 4567"
     }
   },
@@ -72,26 +60,26 @@ const partecipanti = [
     }
   },
   {
-    nome: "Thomas",
-    cognome: "Turbato",
-    email: "thomas.burbato@example.com",
+    nome: "Andrea",
+    cognome: "Lombardi",
+    email: "andrea.lombardi@example.com",
     telefono: "+39 392 345 6789",
-    codiceFiscale: "BRBTHM95H23T012V",
+    codiceFiscale: "LMBNDR95H23T012V",
     contattoEmergenza: {
-      nome: "Erica",
-      cognome: "Violoni",
+      nome: "Silvia",
+      cognome: "De Angelis",
       numero: "+39 123 123 4567"
     }
   },
   {
-    nome: "Luca",
-    cognome: "Lippo",
-    email: "luca.lippo@example.com",
+    nome: "Valentina",
+    cognome: "Rinaldi",
+    email: "valentina.rinaldi@example.com",
     telefono: "+39 371 234 5678",
-    codiceFiscale: "LPPLCU98I30P345L",
+    codiceFiscale: "RNLVLT98I30P345L",
     contattoEmergenza: {
-      nome: "Paul",
-      cognome: "Pacci",
+      nome: "Federico",
+      cognome: "Pugliese",
       numero: "+39 123 123 4567"
     }
   },
@@ -104,18 +92,6 @@ const partecipanti = [
     contattoEmergenza: {
       nome: "Paolina",
       cognome: "De Cignis",
-      numero: "+39 123 123 4567"
-    }
-  },
-  {
-    nome: "Giudy",
-    cognome: "Coca",
-    email: "giudy.coca@example.com",
-    telefono: "+39 355 678 9012",
-    codiceFiscale: "COCGDY82K09R890W",
-    contattoEmergenza: {
-      nome: "Oliver",
-      cognome: "Fioravanti",
       numero: "+39 123 123 4567"
     }
   },
