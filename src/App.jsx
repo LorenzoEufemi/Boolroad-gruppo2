@@ -3,21 +3,24 @@ import AppLayout from "./layout/AppLayout";
 import SingleTripPage from "./pages/SingleTripPage";
 import HomePage from "./pages/HomePage";
 import TripsPage from "./pages/TripsPage";
+import { GlobalProvider } from "./context/GlobalContext";
 
 function App() {
-  
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route path="/" element={<HomePage />}/>
-          <Route path="/trips" >
-            <Route index element={<TripsPage />}/>
-            <Route path=":id" element={<SingleTripPage />}/>
+    <GlobalProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/trips" >
+              <Route index element={<TripsPage />} />
+              <Route path=":id" element={<SingleTripPage />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>     
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 };
 

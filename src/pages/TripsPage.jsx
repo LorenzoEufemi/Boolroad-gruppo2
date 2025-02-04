@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import data from "../data/viaggi";
 import SearchBar from "../components/SearchBar";
 import { useState } from "react";
+import { useGlobalContext } from "../context/GlobalContext";
 
 // oggetto per la creazione di dati da usare
 const initialData = {
@@ -24,10 +24,10 @@ const initialData = {
 
 function TripsPage() {
 
+    const { dataArr, setDataArr } = useGlobalContext()
+
     // oggetto da aggiungere all'array dei viaggi al salvataggio di un nuovo viaggio
     const [formData, setFormData] = useState(initialData);
-    // array di oggetti contentente tutti i viaggi
-    const [dataArr, setDataArr] = useState(data);
     // flag per mostrare o meno il modale del form
     const [modal, setModal] = useState(false);
 
@@ -74,13 +74,13 @@ function TripsPage() {
                                     <input className="form-control" type="date" onChange={handleInputChange} value={formData.dataInizio} id="dataInizio" name="dataInizio" />
                                     <label htmlFor="dataFine">Inserire data Fine</label>
                                     <input className="form-control" type="date" onChange={handleInputChange} value={formData.dataFine} id="dataFine" name="dataFine" />
-                                    
+
                                     {/* Checkbox "In corso" */}
                                     {/* TODO SISTEMARE QUESTA COSA */}
-                                    {/* <div className="form-check mt-3">
+                                    <div className="form-check mt-3">
                                         <input className="form-check-input" type="checkbox" onChange={handleInputChange} checked={formData.inCorso} id="inCorso" name="inCorso" />
                                         <label className="form-check-label text-light" htmlFor="inCorso">In corso</label>
-                                    </div> */}
+                                    </div>
 
                                     {/* submit  */}
                                     <div className="modal-footer d-flex justify-content-between pt-3">
