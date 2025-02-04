@@ -31,7 +31,6 @@ main {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     padding: 2rem;
-
 }
 
 /* TRIPS PAGE */
@@ -130,8 +129,6 @@ main {
     overflow-y: auto;
 }
 
-.back-btn {}
-
 .trip-box {
     padding: 4rem 0;
 }
@@ -161,4 +158,55 @@ main {
 /* FOOTER */
 footer {
     height: 67px;
+}
+
+footer div:first-child {
+    width: 80%;
+}
+
+footer .list {
+    width: 40%;
+}
+
+/* #################### */
+/* #### MEDIA QUERY #### */
+/* #################### */
+
+/* Desktop First */
+@media screen and (max-width: 1440px) {
+     
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 30px;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 75%;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+     
 }
