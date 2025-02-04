@@ -226,13 +226,18 @@ footer .list {
 @media screen and (max-width: 768px) {
 
     /* TRIPS PAGE */
-    .trips-page .container {
-        padding: 0;
-        width: 100%;
+    .top-area {
+        
     }
 
-    .top-area {
+    .search-box {
+        width: 50%;
+        padding: 1rem;
+        justify-content: start;
+    }
 
+    .search-box h3 {
+        font-size: 1rem;
     }
 
     .c-modal-btn {
