@@ -35,10 +35,16 @@ function TripsPage() {
     // salviamo onChange ogni cambiamento dell input e il suo valore
     const handleInputChange = (event) => {
         const inputName = event.target.name;
-        const value = event.target.value;
-        const newObject = { ...formData, [inputName]: value, id: Date.now() };
-        console.log(newObject);
-        setFormData(newObject);
+        if (event.target.type === "checkbox") {
+            const value = event.target.checked;
+            const newObject = { ...formData, [inputName]: value, id: Date.now() };
+            setFormData(newObject);
+
+        } else {
+            const value = event.target.value;
+            const newObject = { ...formData, [inputName]: value, id: Date.now() };
+            setFormData(newObject);
+        }
     }
 
     // al submit salviamo il valore del nuovo oggetto creato al nostro array di viaggi
