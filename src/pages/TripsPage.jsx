@@ -151,7 +151,7 @@ function TripsPage() {
                                                     type="button"
                                                     className={`btn ${curViaggio.inCorso ? "btn-success" : "btn-light disabled"}`}
                                                 >
-                                                    Dettagli
+                                                    Info
                                                 </Link>
                                             </div>
                                         </div>

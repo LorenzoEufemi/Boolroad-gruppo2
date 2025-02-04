@@ -50,7 +50,7 @@ function SingleTripPage() {
                         <button className="btn btn-primary mt-4 back-btn" onClick={() => navigate(-1)}>indietro</button>
 
                         {/* bio partecipante */}
-                        <div className="card mx-auto info" key={dettaglioPartecipante.codiceFiscale} style={{ width: "25rem" }}>
+                        <div className="card mx-auto info" key={dettaglioPartecipante.codiceFiscale}>
                             <div className=" ">
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item "><strong>Nome: </strong>{dettaglioPartecipante.nome}</li>

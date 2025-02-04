@@ -59,7 +59,7 @@ function SearchBar() {
             </form>
 
             {/* viaggiatori cercati */}
-            <div className="pt-5">
+            <div className="viaggiatore pt-3">
                 {viaggiatore && (
                     <div className="card">
                         <div className="card-body d-flex align-items-center gap-2">
@@ -72,7 +72,7 @@ function SearchBar() {
                     viaggiDelPartecipante.map(curViaggio => (
                         <Link
                             key={curViaggio.id}
-                            className="card border-0"
+                            className="search-viaggio card border-0"
                             to={`/trips/${curViaggio.id}`}>
                             <div className="card-body text-start p-2">
                                 <h5 className="mb-0">Viaggio: {curViaggio.nomeViaggio}</h5>

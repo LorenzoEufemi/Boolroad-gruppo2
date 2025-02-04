@@ -119,6 +119,10 @@ main {
     bottom: 150px;
 }
 
+.search-viaggio {
+    margin: 1rem 0 0 0;
+}
+
 /* SINGLE TRIP PAGE */
 .single-trip-page {
     height: calc(100vh - 150px);
@@ -145,6 +149,7 @@ main {
 .info {
     border: 1.5px solid black;
     border-radius: 5px;
+    width: 25rem;
 }
 
 .search-form {
@@ -160,10 +165,6 @@ footer {
     height: 67px;
 }
 
-footer div:first-child {
-    width: 80%;
-}
-
 footer .list {
     width: 40%;
 }
@@ -174,7 +175,7 @@ footer .list {
 
 /* Desktop First */
 @media screen and (max-width: 1500px) {
-     
+
     /* TRIPS PAGE */
     .c-modal-btn {
         position: absolute;
@@ -184,30 +185,27 @@ footer .list {
 }
 
 @media screen and (max-width: 1494px) {
-     
+
     /* TRIPS PAGE */
     .c-modal-btn {
-        position: absolute;
         right: 2.5%;
         bottom: 150px;
     }
 }
 
 @media screen and (max-width: 1490px) {
-     
+
     /* TRIPS PAGE */
     .c-modal-btn {
-        position: absolute;
         right: 2.5%;
         bottom: 150px;
     }
 }
 
 @media screen and (max-width: 1440px) {
-     
+
     /* TRIPS PAGE */
     .c-modal-btn {
-        position: absolute;
         right: 2.5%;
         bottom: 150px;
     }
@@ -217,7 +215,6 @@ footer .list {
 
     /* TRIPS PAGE */
     .c-modal-btn {
-        position: absolute;
         right: 20px;
         bottom: 150px;
     }
@@ -226,31 +223,93 @@ footer .list {
 @media screen and (max-width: 768px) {
 
     /* TRIPS PAGE */
-    .top-area {
-        
-    }
-
     .search-box {
-        width: 50%;
         padding: 1rem;
         justify-content: start;
     }
 
     .search-box h3 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .c-modal-btn {
-        position: absolute;
-        right: 20px;
-        bottom: 75%;
+        bottom: 300px;
     }
 
     .top-area {
         width: 100%;
     }
+
+    .add-trip {
+        padding: 1rem;
+    }
+
+    .add-trip h6 {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer div:first-child {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 425px) {
-     
+@media screen and (max-width: 390px) {
+
+    /* TRIPS PAGE */
+    .search-box h3 {
+        font-size: 1rem;
+    }
+
+    .trips-area {
+        justify-content: center;
+        padding: 2rem 3rem;
+    }
+
+    .trips-area li {
+        height: 12rem;
+    }
+
+    .trips-area .card-subtitle {
+        display: none;
+    }
+
+    .trips-area .btn {
+        font-size: 1rem;
+    }
+
+    .c-modal-btn {
+        padding: 0;
+        bottom: 15px;
+    }
+
+    .search-viaggio {
+        font-size: 0.8rem;
+    }
+
+    /* SINGLE TRIP */
+    .back-btn {
+        margin-bottom: 1rem;
+    }
+
+    .info {
+        width: 20rem;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 0.6rem;
+    }
+
+    .diritti {
+        display: none;
+    }
+
+    footer div:first-child {
+        width: 60%;
+    }
+
+    footer .links {
+        padding-top: 1rem;
+    }
 }
