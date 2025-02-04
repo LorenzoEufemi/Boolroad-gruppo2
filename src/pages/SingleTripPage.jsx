@@ -12,11 +12,11 @@ function SingleTripPage() {
     const navigate = useNavigate();
 
     const getTrip = () => {
-
+        // cerchiamo corrispondeza tra l'id del viaggio corrente e l'id preso come parametro
         const viaggioSelezionato = viaggi.find(curViaggio => {
             return curViaggio.id === tripId;
         });
-        setTrip(viaggioSelezionato)
+        setTrip(viaggioSelezionato)//setTrip assegna il valore di viaggioSelezionato a trip
     };
 
     // funzione dove passo codice fiscale del partecipante 
@@ -32,7 +32,7 @@ function SingleTripPage() {
         setDettaglioPartecipante(curPartecipante)
     };
 
-
+    // al caricamento della pagina o al cambio di valore della variabile viaggi richiamo la funzione getTrip
     useEffect(() => {
         getTrip();
 

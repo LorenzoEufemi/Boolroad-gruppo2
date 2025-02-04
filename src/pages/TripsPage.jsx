@@ -3,7 +3,7 @@ import data from "../data/viaggi";
 import SearchBar from "../components/SearchBar";
 import { useState } from "react";
 
-
+// oggetto per la creazione di dati da usare
 const initialData = {
     id: 0,
     nomeViaggio: "",
@@ -24,11 +24,15 @@ const initialData = {
 
 function TripsPage() {
 
+    // oggetto da aggiungere all'array dei viaggi al salvataggio di un nuovo viaggio
     const [formData, setFormData] = useState(initialData);
+    // array di oggetti contentente tutti i viaggi
     const [dataArr, setDataArr] = useState(data);
+    // flag per mostrare o meno il modale del form
     const [modal, setModal] = useState(false);
 
 
+    // salviamo onChange ogni cambiamento dell input e il suo valore
     const handleInputChange = (event) => {
         const inputName = event.target.name;
         const value = event.target.value;
@@ -37,11 +41,12 @@ function TripsPage() {
         setFormData(newObject);
     }
 
+    // al submit salviamo il valore del nuovo oggetto creato al nostro array di viaggi
     const handleSubmit = (event) => {
         event.preventDefault();
         setDataArr([...dataArr, formData]);
         setFormData(initialData);
-        setModal(false);
+        setModal(false); //chiudiamo il form
     }
 
     return (
@@ -110,7 +115,7 @@ function TripsPage() {
                     <div className="trips-area d-flex">
                         <ul className="d-flex flex-wrap gap-4 list-unstyled justify-content-evenly">
 
-                            {/* card viaggi */}
+                            {/* card viaggi cicliamo l'array di viaggi con l'aggiunta dei viaggi inseriti dall'utente */}
                             {dataArr.map(curViaggio => (
                                 <li key={curViaggio.id} className="col-12 col-sm-12 d-flex flex-column justify-content-end">
                                     <div
