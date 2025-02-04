@@ -1,19 +1,20 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import viaggi from "../data/viaggi";
 import { useEffect, useState } from "react";
 import arrPartecipanti from "../data/patecipanti";
+import { useGlobalContext } from "../context/GlobalContext";
 
 function SingleTripPage() {
     const { id } = useParams();
     const tripId = parseInt(id);
     const [trip, setTrip] = useState({});
     const [dettaglioPartecipante, setDettaglioPartecipante] = useState();
+    const { dataArr } = useGlobalContext()
 
     const navigate = useNavigate();
 
     const getTrip = () => {
         // cerchiamo corrispondeza tra l'id del viaggio corrente e l'id preso come parametro
-        const viaggioSelezionato = viaggi.find(curViaggio => {
+        const viaggioSelezionato = dataArr.find(curViaggio => {
             return curViaggio.id === tripId;
         });
         setTrip(viaggioSelezionato)//setTrip assegna il valore di viaggioSelezionato a trip
@@ -36,7 +37,7 @@ function SingleTripPage() {
     useEffect(() => {
         getTrip();
 
-    }, [viaggi]);
+    }, [dataArr]);
 
 
     return (
