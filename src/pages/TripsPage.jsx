@@ -61,6 +61,7 @@ function TripsPage() {
                                 <h5 className="modal-title text-light">Aggiungi un viaggio</h5>
                             </div>
                             <div className="modal-body">
+
                                 {/* form per l'inserimento di nuovi viaggi */}
                                 <form onSubmit={handleSubmit}>
                                     <label htmlFor="nomeViaggio"></label>
@@ -73,12 +74,15 @@ function TripsPage() {
                                     <input className="form-control" type="date" onChange={handleInputChange} value={formData.dataInizio} id="dataInizio" name="dataInizio" />
                                     <label htmlFor="dataFine">Inserire data Fine</label>
                                     <input className="form-control" type="date" onChange={handleInputChange} value={formData.dataFine} id="dataFine" name="dataFine" />
+
                                     {/* Checkbox "In corso" */}
                                     {/* TODO SISTEMARE QUESTA COSA */}
                                     <div className="form-check mt-3">
                                         <input className="form-check-input" type="checkbox" onChange={handleInputChange} checked={formData.inCorso} id="inCorso" name="inCorso" />
                                         <label className="form-check-label text-light" htmlFor="inCorso">In corso</label>
                                     </div>
+
+                                    {/* submit  */}
                                     <div className="modal-footer d-flex justify-content-between pt-3">
                                         <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Invia</button>
                                         <button type="button" onClick={() => setModal(false)} className="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
