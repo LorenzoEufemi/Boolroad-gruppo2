@@ -97,7 +97,7 @@ function TripsPage() {
             <div className="trips-page">
 
                 <div className="container">
-                    <div className="d-flex justify-content-between align-items-center">
+                    <div className="top-area d-flex justify-content-between align-items-center">
 
                         {/* serachbar */}
                         <div className="search-box d-flex flex-column justify-content-center align-items-center">

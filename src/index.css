@@ -173,12 +173,42 @@ footer .list {
 /* #################### */
 
 /* Desktop First */
+@media screen and (max-width: 1500px) {
+     
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 2.5%;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1494px) {
+     
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 2.5%;
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1490px) {
+     
+    /* TRIPS PAGE */
+    .c-modal-btn {
+        position: absolute;
+        right: 2.5%;
+        bottom: 150px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
      
     /* TRIPS PAGE */
     .c-modal-btn {
         position: absolute;
-        right: 30px;
+        right: 2.5%;
         bottom: 150px;
     }
 }
@@ -196,13 +226,22 @@ footer .list {
 @media screen and (max-width: 768px) {
 
     /* TRIPS PAGE */
+    .trips-page .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-area {
+
+    }
+
     .c-modal-btn {
         position: absolute;
         right: 20px;
         bottom: 75%;
     }
 
-    .search-box {
+    .top-area {
         width: 100%;
     }
 }
