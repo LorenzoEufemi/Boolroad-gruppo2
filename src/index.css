@@ -162,3 +162,11 @@ main {
 footer {
     height: 67px;
 }
+
+footer div:first-child {
+    width: 80%;
+}
+
+footer .list {
+    width: 40%;
+}
