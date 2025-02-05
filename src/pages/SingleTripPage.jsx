@@ -55,8 +55,8 @@ function SingleTripPage() {
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item "><strong>Nome: </strong>{dettaglioPartecipante.nome}</li>
                                     <li className="list-group-item "><strong>Cognome: </strong>{dettaglioPartecipante.cognome}</li>
-                                    <li className="list-group-item "><strong>Email: </strong>{dettaglioPartecipante.email}</li>
-                                    <li className="list-group-item "><strong>Cellulare: </strong>{dettaglioPartecipante.telefono}</li>
+                                    <li className="list-group-item "><strong>Email: </strong><a href={`mailto:${dettaglioPartecipante.email}`}> {dettaglioPartecipante.email}</a></li>
+                                    <li className="list-group-item "><strong>Cellulare: </strong><a href={`tel:${dettaglioPartecipante.telefono}`}>{dettaglioPartecipante.telefono}</a></li>
                                     <li className="list-group-item "><strong>Codice Fiscale: </strong>{dettaglioPartecipante.codiceFiscale}</li>
                                 </ul>
                             </div>
@@ -67,7 +67,7 @@ function SingleTripPage() {
                                     <li className="list-group-item "><strong>Contatto d'emergenza</strong></li>
                                     <li className="list-group-item "><strong>Nome: </strong>{dettaglioPartecipante.contattoEmergenza.nome}</li>
                                     <li className="list-group-item "><strong>Cognome: </strong>{dettaglioPartecipante.contattoEmergenza.cognome}</li>
-                                    <li className="list-group-item "><strong>Cellulare: </strong>{dettaglioPartecipante.contattoEmergenza.numero}</li>
+                                    <li className="list-group-item "><strong>Cellulare: </strong><a href={`tel:${dettaglioPartecipante.contattoEmergenza.numero}`}>{dettaglioPartecipante.contattoEmergenza.numero}</a></li>
                                 </ul>
                             </div>
                         </div>
