@@ -91,8 +91,8 @@ function TripsPage() {
 
                                     {/* submit  */}
                                     <div className="modal-footer d-flex justify-content-between pt-3">
-                                        <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Invia</button>
                                         <button type="button" onClick={() => setModal(false)} className="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                        <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">Invia</button>
                                     </div>
                                 </form>
                             </div>
